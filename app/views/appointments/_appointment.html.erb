@@ -1,0 +1,18 @@
+<div class="appointment">
+<p>
+<strong>Patient name:</strong>
+ <%= appointment.patient.name %>
+ </p>
+<p>
+<strong>Physician name:</strong>
+<%= appointment.physician.name %>
+</p>
+<p>
+<strong>Hospital name:</strong>  
+<%= appointment.hospital.name%>
+</p>
+<p>
+<strong>Appointment date:</strong>  
+<%= appointment.appointment_date.strftime("%Y-%m-%d %H:%M:%S %Z") %>
+</p>
+</div>

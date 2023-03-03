@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @reception %>
+
+<div>
+  <%= link_to "Edit this reception", edit_reception_path(@reception) %> |
+  <%= link_to "Back to receptions", receptions_path %>
+
+  <%= button_to "Destroy this reception", @reception, method: :delete %>
+</div>

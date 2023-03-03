@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<p><strong>Patient name:</strong> 
+<%= @appointment.patient.name %>
+</p>
+
+<p><strong>Physician name:</strong> 
+<%= @appointment.physician.name %>
+</p>
+<p><strong>Hospital name:</strong> 
+<%= @appointment.hospital.name %>
+</p>
+<p><strong>Appointment date:</strong> 
+<%= @appointment.appointment_date %>
+</p>
+
+<div>
+  <%= link_to "Edit this appointment", edit_appointment_path(@appointment) %> |
+  <%= link_to "Back to appointments", appointments_path %>
+
+  <%= button_to "Destroy this appointment", @appointment, method: :delete %>
+</div>

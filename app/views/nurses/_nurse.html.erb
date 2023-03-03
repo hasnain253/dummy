@@ -1,0 +1,23 @@
+<div id="<%= dom_id nurse %>">
+  <p>
+    <strong>Name:</strong>
+    <%= nurse.name %>
+  </p>
+
+  <p>
+    <strong>Department:</strong>
+    <%= nurse.department %>
+  </p>
+
+  <p>
+    <strong>Contact number:</strong>
+    <%= nurse.contact_number %>
+  </p>
+  <p>
+    <strong>Hospitals:</strong>
+    <% nurse.hospitals.each do |hospital| %>
+      <%= hospital.name %>
+    <% end %>
+  </p>
+  
+</div>

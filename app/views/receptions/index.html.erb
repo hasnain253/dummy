@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Receptions</h1>
+
+<div id="receptions">
+  <% @receptions.each do |reception| %>
+    <%= render reception %>
+    <p>
+      <%= link_to "Show this reception", reception %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reception", new_reception_path %>
